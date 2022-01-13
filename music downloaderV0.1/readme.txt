@@ -12,4 +12,25 @@ V0.1 #1.11
 v0.2 #1.12
 1.目前已加入下载vip音乐功能，采用加入VIP账号的cookie
 可自行找到header,修改cookie即可。
-2.需要下载vip歌曲请用download_vip下载，测试账号有三天会员时间。
+2.需要下载vip歌曲请用download_vip.py下载，测试账号有三天会员时间。
+
+v0.3 #1.13
+1.新增下载源，网易云音乐。
+2.最新版本请用Download_Mutiple_Source.py
+3.使用前请配置环境
+  安装库：
+      pip install beautifulsoup4
+      pip install selenium
+4.网易云音乐采用的是动态js加载html,所以不直接抓取html。故本工程使用
+selenium模拟网页，待js加载结束获取标签。用户需保证电脑上有Chrome浏览器，
+下面介绍如何配置webdriver:
+   1.查询浏览器版本，在设置的关于chrome中查看版本
+     例：版本 96.0.4664.110（正式版本） （64 位）
+   2.下载同版本chromedriver.exe
+     下载地址：https://sites.google.com/chromium.org/driver/downloads
+   3.将chromedriver放置谷歌浏览器根目录，python根目录
+      具体教程：https://blog.csdn.net/ysfscdn/article/details/119239382
+   4.修改py文件webdriver地址
+      将executable_path="D:/toolfile/python/selenium/chromedriver.exe"
+      改为自己chromedriver.exe所在路径。
+ 自此配置完成
