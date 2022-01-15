@@ -34,3 +34,8 @@ selenium模拟网页，待js加载结束获取标签。用户需保证电脑上�
       将executable_path="D:/toolfile/python/selenium/chromedriver.exe"
       改为自己chromedriver.exe所在路径。
  自此配置完成
+
+V0.4 #1.15
+1.新增UI界面，主文件为DM_with_ui.py，需将更新后Download_Mutiple_Source.py和music_downloader.py置于同一根目录。
+2.修复Download_Mutiple_Source.py数据错误bug
+3.ui文件已放入ui文件夹中，可自行采用
